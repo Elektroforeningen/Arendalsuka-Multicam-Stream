@@ -1,7 +1,17 @@
 # Arendalsuka-Multicam-Stream
-This repository is both a "how to" and documentation for how The Electrical Association in Norway set up their live streams during Arendalsuka 2024 for both Facebook and LinkedIn with multiple Logitech MEVO cameras and RØDE microphones.
+This repository is both a "how to" and documentation for how The Electrical Association in Norway set up their live streams during Arendalsuka 2024 for both Facebook and LinkedIn with multiple Logitech MEVO cameras and RØDE microphones. This solution uses RTMP to avoid recent issues with the Mevo Multicam App. This solution was used without issues for 6 live streams across 5 days and the recordings are available on YouTube: [Efo - Elektroforeningen channel on YouTube](https://www.youtube.com/@efo-elektroforeningen9052/videos)
 
 All software used is freeware or the "free" version of the app, except for Restream.io which is a paid service that handles streaming to multiple destinations like Facebook and LinkedIn.
+
+## Requirements that was given which resulted in this solution
+
+* Must have 3 camera angles
+* Must have 2 microphones
+* Must have 1 speaker for the audience at location with 0 latency/delay
+* The Video and Audio must be in sync on the live stream
+* The live stream should be on Facebook and LinkedIn at the same time
+
+Because the video and audio must be in sync on the live stream, and the speaker for the audience at locaton must also be in sync, it was decided to split the audio output from the RØDE microphone receiver to 1 of the 3 MEVO start cameras and the speaker.
 
 # Table of contents:
 * [Hardware](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/edit/main/README.md#hardware)

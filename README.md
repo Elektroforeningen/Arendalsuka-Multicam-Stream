@@ -27,4 +27,8 @@ Digram of the hardware-setup used, made using [https://draw.io/](https://draw.io
 # Software
 
 The MEVO cameras are connected to the iPad using the [Logitech Mevo Multicam App](https://apps.apple.com/us/app/logitech-mevo-multicam/id1503021034).
-
+The RØDE Receiver is set up using the [RØDE Central Mobile App](https://apps.apple.com/us/app/r%C3%B8de-central-mobile/id1576314986) 
+The Laptop is receiving the RTMP stream from the Mevo Multicam app on the iPad using [MonaServer (MonaTiny version)](https://sourceforge.net/projects/monaserver/)
+The setup for MonaServer/MonaTiny is from the thread [How do I turn my PC into a local RTMP server? So Mevo can broadcast to it locally](https://www.reddit.com/r/mevocamera/comments/bd5182/how_do_i_turn_my_pc_into_a_local_rtmp_server_so/) on the subreddit [r/mevocamera](https://www.reddit.com/r/mevocamera/) by Reddit-user [magnum_ops](https://www.reddit.com/user/magnum_ops/)
+The RTMP stream is added as a "Media Source" in [Open Broadcaster Software | OBS](https://obsproject.com/) and layers/filters is added to the stream in OBS.
+For streaming from OBS to Facebook and LinkedIn a stream url and stream key from [https://restream.io/](https://restream.io/) is used.

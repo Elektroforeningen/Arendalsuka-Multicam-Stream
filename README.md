@@ -3,7 +3,7 @@ This repository is both a "how to" and documentation for how The Electrical Asso
 
 All software used is freeware or the "free" version of the app, except for Restream.io which is a paid service that handles streaming to multiple destinations like Facebook and LinkedIn.
 
-## Requirements that was given which resulted in this solution
+## Requirements that were given which resulted in this solution
 
 * Must have 3 camera angles
 * Must have 2 microphones
@@ -11,7 +11,7 @@ All software used is freeware or the "free" version of the app, except for Restr
 * The Video and Audio must be in sync on the live stream
 * The live stream should be on Facebook and LinkedIn at the same time
 
-Because the video and audio must be in sync on the live stream, and the speaker for the audience at locaton must also be in sync, it was decided to split the audio output from the RØDE microphone receiver to 1 of the 3 MEVO start cameras and the speaker.
+Because the video and audio must be in sync on the live stream, and the speaker for the audience at location must also be in sync, it was decided to split the audio output from the RØDE microphone receiver to 1 of the 3 MEVO start cameras and the speaker.
 
 # Table of contents:
 * [Hardware](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/edit/main/README.md#hardware)
@@ -21,9 +21,9 @@ Because the video and audio must be in sync on the live stream, and the speaker 
 # Hardware
 
 * [MEVO start camera 3-Pack](https://www.mevo.com/no-NO/products/mevo-start-3-pack)
-* Windows 11 Laptop
+* Windows 11 laptop
 * iPad
-* 5G wifi router
+* 5G Wi-Fi router
 * [RØDE Wireless GO II](https://rode.com/en/microphones/wireless/wirelessgoii?variant_sku=WIGOII) (2 microphones 1 receiver)
 * [Bose S1 Pro speaker](https://support.bose.com/s/product/s1-pro-portable-bluetooth-speaker-system/01t8c00000OydMeAAJ?language=en_US) (for the audience at location)
 * 3.5mm minijack splitter
@@ -32,7 +32,7 @@ Because the video and audio must be in sync on the live stream, and the speaker 
 
 # Hardware diagram
 
-Digram of the hardware-setup used, made using [https://draw.io/](https://draw.io/)
+Diagram of the hardware-setup used, made using [https://draw.io/](https://draw.io/)
 
 ![Arendalsuka-Multicam-Stream.png](Arendalsuka-Multicam-Stream.png)
 
@@ -42,10 +42,10 @@ The MEVO cameras are connected to the iPad using the [Logitech Mevo Multicam App
 
 The RØDE Receiver is set up using the [RØDE Central Mobile App](https://apps.apple.com/us/app/r%C3%B8de-central-mobile/id1576314986) (free app).
 
-The Laptop is receiving the RTMP stream from the Mevo Multicam app on the iPad using [MonaServer (MonaTiny version)](https://sourceforge.net/projects/monaserver/) (frewware, GPL-3.0 license)
+The laptop is receiving the RTMP stream from the Mevo Multicam app on the iPad using [MonaServer (MonaTiny version)](https://sourceforge.net/projects/monaserver/) (freeware, GPL-3.0 license)
 
 The setup for MonaServer/MonaTiny is from the thread [How do I turn my PC into a local RTMP server? So Mevo can broadcast to it locally](https://www.reddit.com/r/mevocamera/comments/bd5182/how_do_i_turn_my_pc_into_a_local_rtmp_server_so/) on the subreddit [r/mevocamera](https://www.reddit.com/r/mevocamera/) by Reddit-user [magnum_ops](https://www.reddit.com/user/magnum_ops/)
 
-The RTMP stream is added as a "Media Source" in [Open Broadcaster Software | OBS](https://obsproject.com/) (freeware, GPL-2.0 license) and layers/filters is added to the stream in OBS.
+The RTMP stream is added as a "Media Source" in [Open Broadcaster Software | OBS](https://obsproject.com/) (freeware, GPL-2.0 license) and layers/filters are added to the stream in OBS.
 
-For streaming from OBS to Facebook and LinkedIn a stream url and stream key from [https://restream.io/](https://restream.io/) (paid account) is used.
+For streaming from OBS to Facebook and LinkedIn a stream URL and stream key from [https://restream.io/](https://restream.io/) (paid account) is used.

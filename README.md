@@ -1,5 +1,7 @@
 # Arendalsuka-Multicam-Stream
-This repository is both a "how to" and documentation for how The Electrical Association in Norway set up their live streams during Arendalsuka 2024 for both Facebook and LinkedIn with multiple Logitech MEVO cameras and RØDE microphones. This solution uses RTMP to avoid recent issues with the Mevo Multicam App. This solution was used without issues for 6 live streams across 5 days and the recordings are available on YouTube: [Efo - Elektroforeningen channel on YouTube](https://www.youtube.com/@efo-elektroforeningen9052/videos)
+This repository serves as a guide and documentation for how The Electrical Association in Norway (Elektroforeningen) set up their live streams during Arendalsuka 2024 (August 12-16). The streams were broadcast live on both Facebook and LinkedIn and used 3 Logitech MEVO cameras and 2 RØDE microphones.
+
+This solution uses RTMP streaming to bypass recent problems encountered with the Mevo Multicam App and/or new changes to Facebook streaming. It successfully facilitated six live streams across five days, and the recordings are now available on YouTube: [Efo - Elektroforeningen channel on YouTube](https://www.youtube.com/@efo-elektroforeningen9052/videos)
 
 All software used is freeware or the "free" version of the app, except for Restream.io which is a paid service that handles streaming to multiple destinations like Facebook and LinkedIn.
 You can use the free version of Restream.io, but you will get a "Restream" watermark on your video. There are alternatives to Restream.io but we have not tried anything else (yet).

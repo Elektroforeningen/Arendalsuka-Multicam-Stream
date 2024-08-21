@@ -9,6 +9,7 @@ Using RTMP between an iPad with the MEVO Multicam app and an Windows laptop with
 
 # Table of contents:
 * [tl;dr -guide (Windows)](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/edit/main/README.md#tldr--guide-windows)
+  * [Configure stream key for MonaTiny](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/edit/main/README.md#configure-stream-key-for-monatiny) 
 * [Requirements that were given which resulted in this solution](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/edit/main/README.md#requirements-that-were-given-which-resulted-in-this-solution)
 * [Hardware](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/edit/main/README.md#hardware)
 * [Hardware diagram](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/edit/main/README.md#hardware-diagram)
@@ -17,15 +18,39 @@ Using RTMP between an iPad with the MEVO Multicam app and an Windows laptop with
 
 # tl;dr -guide (Windows)
 
-1. Connect the MEVO cameras to the MEVO Multicam app on your iPad (or iPhone, or Android device)
-2. Start MonaTiny on your windows pc, it should look something like this:
-![Screenshot_758](https://github.com/user-attachments/assets/bc34efcc-dd7f-4502-9ccc-1d054a076e76)
-3. Check that the IPv4 -address has not changed since last time using `ipconfig` in cmd/terminal on the windows pc, see example below:
-![Screenshot_757](https://github.com/user-attachments/assets/2eac4de3-f224-4535-b8e1-b859dd48d0ee)
-5. Use the address `rtmp://(your IP)/live/` and the key `abc` (if you picked the stream key `abc`) as RTMP output in the MEVO Multicam -app and start streaming
-6. Open OBS on the windows pc and add a new `Media Source` with the address `rtmp://(your IP):1935/live/abc`
-![Screenshot_756](https://github.com/user-attachments/assets/a35f4b74-8515-4c75-be9d-00dfe4f5b677)
-7. You should now see the MEVO camera in OBS
+If you just need the bare minimum for connecting the MEVO cameras to OBS using RTMP:
+
+* Connect the MEVO cameras to the MEVO Multicam app on your iPad (or iPhone, or Android device)
+* Start MonaTiny on your windows pc, it should look something like the screenshot below:
+  * (if you have not configured MonaTiny with a key yet read [Configure stream key for MonaTiny:](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/edit/main/README.md#configure-stream-key-for-monatiny) first)
+
+  ![Screenshot_758](https://github.com/user-attachments/assets/bc34efcc-dd7f-4502-9ccc-1d054a076e76)
+
+* Check that the IPv4 -address has not changed since last time using `ipconfig` in cmd/terminal on the windows pc, see example below:
+
+  ![Screenshot_757](https://github.com/user-attachments/assets/2eac4de3-f224-4535-b8e1-b859dd48d0ee)
+
+* In the MEVO Multicam -app on the iPad, use the address `rtmp://(your IP)/live/` and the key `abc` (if you picked the stream key `abc`) as RTMP output/destination and start streaming
+* Open OBS on the windows pc and add a new `Media Source` with the address `rtmp://(your IP):1935/live/abc`
+
+  ![Screenshot_756](https://github.com/user-attachments/assets/a35f4b74-8515-4c75-be9d-00dfe4f5b677)
+  
+* You should now see the MEVO camera in OBS and you can stream to whatever you want from OBS
+
+## Configure stream key for MonaTiny
+
+* Run MonaTiny at least once so that it creates the folder `www`
+  * Before:
+
+  ![Screenshot_759](https://github.com/user-attachments/assets/36f8bc93-d464-423f-a4dc-8acddbffd8f5)
+  * After:
+
+  ![Screenshot_760](https://github.com/user-attachments/assets/5a9d3811-6040-4545-8752-0a0b17d92951)
+* Close MonaTiny
+* Create a new folder in the folder `www` with the stream key of your choice, for example `abc`
+
+  ![Screenshot_762](https://github.com/user-attachments/assets/98a3f909-c0cb-4c1d-ac99-46efbedaad54)
+* Run MonaTiny again
 
 ## Requirements that were given which resulted in this solution
 

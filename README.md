@@ -8,11 +8,23 @@ We did try using NDI and SRT but that resulted in issues with lag, disconnection
 Using RTMP between an iPad with the MEVO Multicam app and an Windows laptop with OBS (Open Broadcaster Software) solved the issues we had.
 
 # Table of contents:
+* [tl;dr -guide (Windows)](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/edit/main/README.md#tldr--guide-windows)
 * [Requirements that were given which resulted in this solution](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/edit/main/README.md#requirements-that-were-given-which-resulted-in-this-solution)
 * [Hardware](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/edit/main/README.md#hardware)
 * [Hardware diagram](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/edit/main/README.md#hardware-diagram)
 * [Software](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/edit/main/README.md#software)
   * [If you have a Mac and not a Windows/Linux pc](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/edit/main/README.md#if-you-have-a-mac-and-not-a-windowslinux-pc)
+
+# tl;dr -guide (Windows)
+
+1. Connect the MEVO cameras to the MEVO Multicam app on your iPad (or iPhone, or Android device)
+2. Start MonaTiny on your windows pc
+3. Check that the ip-address has not changed since last time using `ipconfig` in cmd/terminal on the windows pc
+4. Use the address `rtmp://(your IP)/live/abc` (if you picked the stream key `abc`) as RTMP output in the MEVO Multicam -app and start streaming
+5. Open OBS on the windows pc and add a new `Media Source` with the address `rtmp://(your IP)/live/abc`
+6. You should now see the MEVO camera in OBS
+
+![Screenshot_755](https://github.com/user-attachments/assets/b7f912b1-0573-437f-a4bd-056d4af2b776)
 
 ## Requirements that were given which resulted in this solution
 
@@ -59,4 +71,4 @@ For streaming from OBS to Facebook and LinkedIn a stream URL and stream key from
 ## If you have a Mac and not a Windows/Linux pc
 
 There is a simlair solution to this one documented by MEVO on their webpage where MEVO has created their own local RTMP server -app for MacOS which does the same as MonaServer/MonaTiny: [Multicam: Connecting to OBS](https://help.mevo.com/hc/en-us/articles/360061673871-Multicam-Connecting-to-OBS)
-If you are a mac-user, use this app instead.
+If you are a mac-user, you should probably use this app instead even tho MonaServer/MonaTiny has a Unix -build, but it is not as user friendly to set up.

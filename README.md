@@ -18,13 +18,14 @@ Using RTMP between an iPad with the MEVO Multicam app and an Windows laptop with
 # tl;dr -guide (Windows)
 
 1. Connect the MEVO cameras to the MEVO Multicam app on your iPad (or iPhone, or Android device)
-2. Start MonaTiny on your windows pc
-3. Check that the ip-address has not changed since last time using `ipconfig` in cmd/terminal on the windows pc
-4. Use the address `rtmp://(your IP)/live/abc` (if you picked the stream key `abc`) as RTMP output in the MEVO Multicam -app and start streaming
-5. Open OBS on the windows pc and add a new `Media Source` with the address `rtmp://(your IP)/live/abc`
-6. You should now see the MEVO camera in OBS
-
-![Screenshot_755](https://github.com/user-attachments/assets/b7f912b1-0573-437f-a4bd-056d4af2b776)
+2. Start MonaTiny on your windows pc, it should look something like this:
+![Screenshot_758](https://github.com/user-attachments/assets/bc34efcc-dd7f-4502-9ccc-1d054a076e76)
+3. Check that the IPv4 -address has not changed since last time using `ipconfig` in cmd/terminal on the windows pc, see example below:
+![Screenshot_757](https://github.com/user-attachments/assets/2eac4de3-f224-4535-b8e1-b859dd48d0ee)
+5. Use the address `rtmp://(your IP)/live/` and the key `abc` (if you picked the stream key `abc`) as RTMP output in the MEVO Multicam -app and start streaming
+6. Open OBS on the windows pc and add a new `Media Source` with the address `rtmp://(your IP):1935/live/abc`
+![Screenshot_756](https://github.com/user-attachments/assets/a35f4b74-8515-4c75-be9d-00dfe4f5b677)
+7. You should now see the MEVO camera in OBS
 
 ## Requirements that were given which resulted in this solution
 

@@ -18,7 +18,7 @@ Using RTMP between an iPad with the MEVO Multicam app and an Windows laptop with
 
 # tl;dr -guide (Windows)
 
-If you just need the bare minimum for connecting the MEVO cameras to OBS using RTMP, using an iPad with the MEVO Multicam -app and a windows pc:
+If you just need the bare minimum for connecting the MEVO cameras to OBS using RTMP, using an iPad (or iPhone/Android device) with the MEVO Multicam -app and a windows pc:
 
 * Connect the iPad and the windows pc to the same wifi
 * Connect the MEVO cameras to the MEVO Multicam app on your iPad (or iPhone, or Android device)

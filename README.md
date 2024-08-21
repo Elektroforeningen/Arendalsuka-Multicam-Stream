@@ -2,21 +2,27 @@
 This repository is both a "how to" and documentation for how The Electrical Association in Norway set up their live streams during Arendalsuka 2024 for both Facebook and LinkedIn with multiple Logitech MEVO cameras and RØDE microphones. This solution uses RTMP to avoid recent issues with the Mevo Multicam App. This solution was used without issues for 6 live streams across 5 days and the recordings are available on YouTube: [Efo - Elektroforeningen channel on YouTube](https://www.youtube.com/@efo-elektroforeningen9052/videos)
 
 All software used is freeware or the "free" version of the app, except for Restream.io which is a paid service that handles streaming to multiple destinations like Facebook and LinkedIn.
+You can use the free version of Restream.io, but you'll get a "Restream" watermark on your video. There are alternatives to Restream.io but we have not tried anything else (yet).
+
+We did try using NDI and SRT but that resulted in issues with lag, disconnections and audio which was not in sync with the video.
+Using RTMP between an iPad with the MEVO Multicam app and an Windows laptop with OBS (Open Broadcaster Software) solved the issues we had.
+
+# Table of contents:
+* [Requirements that were given which resulted in this solution](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/edit/main/README.md#requirements-that-were-given-which-resulted-in-this-solution)
+* [Hardware](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/edit/main/README.md#hardware)
+* [Hardware diagram](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/edit/main/README.md#hardware-diagram)
+* [Software](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/edit/main/README.md#software)
+  * [If you have a Mac and not a Windows/Linux pc](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/edit/main/README.md#if-you-have-a-mac-and-not-a-windowslinux-pc)
 
 ## Requirements that were given which resulted in this solution
 
 * Must have 3 camera angles
 * Must have 2 microphones
-* Must have 1 speaker for the audience at location with 0 latency/delay
 * The Video and Audio must be in sync on the live stream
+* Must have 1 speaker for the audience at location with 0 latency/delay
 * The live stream should be on Facebook and LinkedIn at the same time
 
-Because the video and audio must be in sync on the live stream, and the speaker for the audience at location must also be in sync, it was decided to split the audio output from the RØDE microphone receiver to 1 of the 3 MEVO start cameras and the speaker.
-
-# Table of contents:
-* [Hardware](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/edit/main/README.md#hardware)
-* [Hardware diagram](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/edit/main/README.md#hardware-diagram)
-* [Software](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/edit/main/README.md#software)
+Because the video and audio must be in sync on the live stream, and the speaker for the audience at location must also be in sync, it was decided to split the audio output from the RØDE microphone receiver using a 3.5mm minijack splitter to 1 of the 3 MEVO start cameras and the speaker.
 
 # Hardware
 
@@ -49,3 +55,8 @@ The setup for MonaServer/MonaTiny is from the thread [How do I turn my PC into a
 The RTMP stream is added as a "Media Source" in [Open Broadcaster Software | OBS](https://obsproject.com/) (freeware, GPL-2.0 license) and layers/filters are added to the stream in OBS.
 
 For streaming from OBS to Facebook and LinkedIn a stream URL and stream key from [https://restream.io/](https://restream.io/) (paid account) is used.
+
+## If you have a Mac and not a Windows/Linux pc
+
+There is a simlair solution to this one documented by MEVO on their webpage where MEVO has created their own local RTMP server -app for MacOS which does the same as MonaServer/MonaTiny: [Multicam: Connecting to OBS](https://help.mevo.com/hc/en-us/articles/360061673871-Multicam-Connecting-to-OBS)
+If you are a mac-user, use this app instead.

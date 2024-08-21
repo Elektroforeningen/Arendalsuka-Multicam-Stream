@@ -20,6 +20,7 @@ Using RTMP between an iPad with the MEVO Multicam app and an Windows laptop with
 
 If you just need the bare minimum for connecting the MEVO cameras to OBS using RTMP:
 
+* Connect the iPad and the windows pc to the same wifi
 * Connect the MEVO cameras to the MEVO Multicam app on your iPad (or iPhone, or Android device)
 * Start MonaTiny on your windows pc, it should look something like the screenshot below:
   * (if you have not configured MonaTiny with a key yet read [Configure stream key for MonaTiny:](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/edit/main/README.md#configure-stream-key-for-monatiny) first)
@@ -87,8 +88,6 @@ The MEVO cameras are connected to the iPad using the [Logitech Mevo Multicam App
 The RØDE Receiver is set up using the [RØDE Central Mobile App](https://apps.apple.com/us/app/r%C3%B8de-central-mobile/id1576314986) (free app).
 
 The laptop is receiving the RTMP stream from the Mevo Multicam app on the iPad using [MonaServer (MonaTiny version)](https://sourceforge.net/projects/monaserver/) (freeware, GPL-3.0 license)
-
-The setup for MonaServer/MonaTiny is from the thread [How do I turn my PC into a local RTMP server? So Mevo can broadcast to it locally](https://www.reddit.com/r/mevocamera/comments/bd5182/how_do_i_turn_my_pc_into_a_local_rtmp_server_so/) on the subreddit [r/mevocamera](https://www.reddit.com/r/mevocamera/) by Reddit-user [magnum_ops](https://www.reddit.com/user/magnum_ops/)
 
 The RTMP stream is added as a "Media Source" in [Open Broadcaster Software | OBS](https://obsproject.com/) (freeware, GPL-2.0 license) and layers/filters are added to the stream in OBS.
 

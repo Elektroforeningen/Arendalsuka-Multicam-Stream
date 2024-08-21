@@ -2,10 +2,10 @@
 This repository is both a "how to" and documentation for how The Electrical Association in Norway set up their live streams during Arendalsuka 2024 for both Facebook and LinkedIn with multiple Logitech MEVO cameras and RØDE microphones. This solution uses RTMP to avoid recent issues with the Mevo Multicam App. This solution was used without issues for 6 live streams across 5 days and the recordings are available on YouTube: [Efo - Elektroforeningen channel on YouTube](https://www.youtube.com/@efo-elektroforeningen9052/videos)
 
 All software used is freeware or the "free" version of the app, except for Restream.io which is a paid service that handles streaming to multiple destinations like Facebook and LinkedIn.
-You can use the free version of Restream.io, but you'll get a "Restream" watermark on your video. There are alternatives to Restream.io but we have not tried anything else (yet).
+You can use the free version of Restream.io, but you will get a "Restream" watermark on your video. There are alternatives to Restream.io but we have not tried anything else (yet).
 
 We did try using NDI and SRT but that resulted in issues with lag, disconnections and audio which was not in sync with the video.
-Using RTMP between an iPad with the MEVO Multicam app and an Windows laptop with OBS (Open Broadcaster Software) solved the issues we had.
+Using RTMP between an iPad with the MEVO Multicam app and a Windows laptop with OBS (Open Broadcaster Software) solved the issues we had.
 
 # Table of contents:
 * [tl;dr -guide (Windows)](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/edit/main/README.md#tldr--guide-windows)
@@ -20,7 +20,7 @@ Using RTMP between an iPad with the MEVO Multicam app and an Windows laptop with
 
 If you just need the bare minimum for connecting the MEVO cameras to OBS using RTMP, using an iPad (or iPhone/Android device) with the MEVO Multicam -app and a windows pc:
 
-* Connect the iPad and the windows pc to the same wifi
+* Connect the iPad and the windows pc to the same Wi-Fi
 * Connect the MEVO cameras to the MEVO Multicam app on your iPad (or iPhone, or Android device)
 * Start MonaTiny on your windows pc, it should look something like the screenshot below:
   * (if you have not configured MonaTiny with a key yet read [Configure stream key for MonaTiny:](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/edit/main/README.md#configure-stream-key-for-monatiny) first)
@@ -95,5 +95,5 @@ For streaming from OBS to Facebook and LinkedIn a stream URL and stream key from
 
 ## If you have a Mac and not a Windows/Linux pc
 
-There is a simlair solution to this one documented by MEVO on their webpage where MEVO has created their own local RTMP server -app for MacOS which does the same as MonaServer/MonaTiny: [Multicam: Connecting to OBS](https://help.mevo.com/hc/en-us/articles/360061673871-Multicam-Connecting-to-OBS)
-If you are a mac-user, you should probably use this app instead even tho MonaServer/MonaTiny has a Unix -build, but it is not as user friendly to set up.
+There is a similar  solution to this one documented by MEVO on their webpage where MEVO has created their own local RTMP server -app for MacOS which does the same as MonaServer/MonaTiny: [Multicam: Connecting to OBS](https://help.mevo.com/hc/en-us/articles/360061673871-Multicam-Connecting-to-OBS)
+If you are a mac-user, you should probably use this app instead even though MonaServer/MonaTiny has a Unix -build, but it is not as user friendly to set up.

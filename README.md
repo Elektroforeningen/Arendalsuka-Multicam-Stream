@@ -10,13 +10,13 @@ We did try using NDI and SRT but that resulted in issues with lag, disconnection
 Using RTMP between an iPad with the MEVO Multicam app and a Windows laptop with OBS (Open Broadcaster Software) solved the issues we had.
 
 # Table of contents:
-* [tl;dr -guide (Windows)](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/edit/main/README.md#tldr--guide-windows)
-  * [Configure stream key for MonaTiny](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/edit/main/README.md#configure-stream-key-for-monatiny) 
-* [Requirements that were given which resulted in this solution](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/edit/main/README.md#requirements-that-were-given-which-resulted-in-this-solution)
-* [Hardware](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/edit/main/README.md#hardware)
-* [Hardware diagram](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/edit/main/README.md#hardware-diagram)
-* [Software](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/edit/main/README.md#software)
-  * [If you have a Mac and not a Windows/Linux pc](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/edit/main/README.md#if-you-have-a-mac-and-not-a-windowslinux-pc)
+* [tl;dr -guide (Windows)](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream?tab=readme-ov-file#tldr--guide-windows)
+  * [Configure stream key for MonaTiny](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream?tab=readme-ov-file#configure-stream-key-for-monatiny) 
+* [Requirements that were given which resulted in this solution](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream?tab=readme-ov-file#requirements-that-were-given-which-resulted-in-this-solution)
+* [Hardware](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream?tab=readme-ov-file#hardware)
+* [Hardware diagram](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream?tab=readme-ov-file#hardware-diagram)
+* [Software](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream?tab=readme-ov-file#software)
+  * [If you have a Mac and not a Windows/Linux pc](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream?tab=readme-ov-file#if-you-have-a-mac-and-not-a-windowslinux-pc)
 
 # tl;dr -guide (Windows)
 
@@ -25,7 +25,7 @@ If you just need the bare minimum for connecting the MEVO cameras to OBS using R
 * Connect the iPad and the windows pc to the same Wi-Fi
 * Connect the MEVO cameras to the MEVO Multicam app on your iPad (or iPhone, or Android device)
 * Start MonaTiny on your windows pc, it should look something like the screenshot below:
-  * (if you have not configured MonaTiny with a key yet read [Configure stream key for MonaTiny:](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/edit/main/README.md#configure-stream-key-for-monatiny) first)
+  * (if you have not configured MonaTiny with a key yet read [Configure stream key for MonaTiny:](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream?tab=readme-ov-file#configure-stream-key-for-monatiny) first)
 
   ![Screenshot_758](https://github.com/user-attachments/assets/bc34efcc-dd7f-4502-9ccc-1d054a076e76)
 

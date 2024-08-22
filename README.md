@@ -80,7 +80,7 @@ Because the video and audio must be in sync on the live stream, and the speaker 
 # Hardware diagram
 
 Diagram of the hardware-setup used, made using [https://draw.io/](https://draw.io/) (freeware)
-You can download the diagram-file [Arendalsuka-Multicam-Stream.drawio](https://raw.githubusercontent.com/Elektroforeningen/Arendalsuka-Multicam-Stream/main/Arendalsuka-Multicam-Stream.drawio) from this repository and modify it to your needs in draw.io
+You can download the diagram-file [Arendalsuka-Multicam-Stream.drawio](https://github.com/Elektroforeningen/Arendalsuka-Multicam-Stream/blob/main/Arendalsuka-Multicam-Stream.drawio) from this repository and modify it to your needs in draw.io
 
 ![Arendalsuka-Multicam-Stream.png](Arendalsuka-Multicam-Stream.png)
 
